@@ -1,0 +1,14 @@
+{
+  "id": "<%= id%>",
+  "language": "<%= language%>",
+  "title": "<%= title%>",
+  "description": "<%= description%>",
+  "created": "<%= creationDate%>",
+  "revised": "<%= creationDate%>",
+  "contributors": <%- contributorsList%>,
+  "keywords": <%- keywordsList%>,
+  "disciplines": <%- disciplinesList%>,
+  "subjects": <%- subjectsList%>,
+  "studyObjectives": <%- studyObjectivesList%>,
+  "elements": []
+}

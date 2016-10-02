@@ -1,0 +1,11 @@
+{
+  "name": "imard-module-<%= id%>",
+  "version": "1.0.0",
+  "description": "<%= title%> - <%= description%>",
+  "main": "module.md",
+  "author": "IMARD system",
+  "devDependencies": {
+    "imard-cli": "^0.0.0"
+  },
+  "license": "MIT"
+}
