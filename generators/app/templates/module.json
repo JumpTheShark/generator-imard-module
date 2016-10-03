@@ -8,7 +8,6 @@
   "contributors": <%- contributorsList%>,
   "keywords": <%- keywordsList%>,
   "disciplines": <%- disciplinesList%>,
-  "subjects": <%- subjectsList%>,
   "studyObjectives": <%- studyObjectivesList%>,
   "elements": []
 }

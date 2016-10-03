@@ -75,11 +75,10 @@ module.exports = yeoman.Base.extend({
       ];
 
     return this.prompt(prompts).then( (props) => {
-      props.contributorsList = JSON.stringify(props.contributors);
-      props.keywordsList = JSON.stringify(props.keywords);
-      props.disciplinesList = JSON.stringify(props.disciplines);
-      props.subjectsList = JSON.stringify(props.subjects);
-      props.studyObjectivesList = JSON.stringify(props.studyObjectives);
+      props.contributorsList = JSON.stringify(props.contributors) || [];
+      props.keywordsList = JSON.stringify(props.keywords) || [];
+      props.disciplinesList = JSON.stringify(props.disciplines) || [];
+      props.studyObjectivesList = JSON.stringify(props.studyObjectives) || [];
       props.id = new Date();
 
       props.creationDate = new Date().toDateString();
@@ -105,7 +104,7 @@ module.exports = yeoman.Base.extend({
       this.templatePath("module.json"),
       this.destinationPath("module.json"),
       this.props
-    )
+    );
 
     this.fs.copy(
       this.templatePath("gitignore.tpl"),
